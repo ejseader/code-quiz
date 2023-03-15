@@ -1,0 +1,208 @@
+/* RESETS */
+* {
+    Font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #86bbd8;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1em;
+}
+
+/* GLOBAL CLASSES */
+
+.text-content {
+    text-align: center;
+}
+
+/* CUSTOM STYLES */
+
+/* HEADER */
+
+header {
+    background-color: black;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    justify-content: space-around;
+}
+
+header nav a {
+    position: relative;
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+header nav a:hover {
+    color: #999;
+}
+
+header nav span {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 2px solid white;
+}
+
+header .brand {
+    display: flex;
+    align-items: center;
+}
+
+header .brand a {
+    color: #fff;
+    font-family: 'Roboto Slab', 'Times New Roman', serif;
+    font-weight: 900;
+    font-size: 1.7em;
+}
+
+header .brand i {
+    color: #fff;
+    font-weight: 900;
+    font-size: 0.8em;
+}
+
+
+/* CONTENT */
+
+main {
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 2%;
+}
+
+#quizBox {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5%;
+    display:flex;
+    flex-direction: column;
+    border: 10px solid black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    flex: 1;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+}
+
+section h1 {
+    font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+    font-size: 2.2em;
+}
+
+section p {
+    padding: 6%;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+}
+
+section button {
+    width: 100%;
+    padding: 10px;
+    height: 2em;
+    background-color: indigo;
+    color: #fff;
+    font-size: 1.6em;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#welcomeBtn {
+    width: fit-content;
+}
+
+section button:hover {
+    background-color: purple;
+}
+
+#questionsAnswers {
+    display: none;
+}
+
+section #questionsAnswers ul {
+    margin-bottom: 50px;
+}
+
+section #questionsAnswers ul li {
+    list-style: none;
+    line-height: 1.5em;
+    margin: 10px 0;
+}
+
+#answerChoice button {
+   width: 100%;
+}
+
+#answerConfirmation {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.yes {
+    color: forestgreen;
+}
+
+.no {
+    color: red;
+}
+
+.nextBtn {
+    width: fit-content;
+    display: none;
+}
+
+#endScreen {
+    display:none;
+}
+
+#endScreen h3 {
+    font-size: 1.2em;
+}
+
+#endScreen #userName {
+    border-radius: 10px;
+    font-size: 1em;
+    padding: 5px;
+}
+
+#endScreen #submitBtn {
+    width: fit-content;
+    font-size: 1em;
+    line-height: 1em;
+    margin-top: 10px;
+}
