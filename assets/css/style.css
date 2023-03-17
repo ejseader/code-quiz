@@ -36,6 +36,10 @@ p {
     text-align: center;
 }
 
+.hide {
+    display: none;
+}
+
 /* CUSTOM STYLES */
 
 /* HEADER */
@@ -62,7 +66,7 @@ header nav a:hover {
     color: #999;
 }
 
-header nav span {
+header #timer {
     position: relative;
     font-size: 1.1em;
     color: #fff;
@@ -107,6 +111,7 @@ main {
     display:flex;
     flex-direction: column;
     border: 10px solid black;
+    margin-bottom: 50px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -150,19 +155,17 @@ section button:hover {
     background-color: purple;
 }
 
-#questionsAnswers {
-    display: none;
-}
+.answerConfirmation {
+    transform: translate(0, 5%);
+    font-size: 1em;
+    font-style: italic;
+    animation: fadeIn 1s;
+  }
 
-section #questionsAnswers ul {
-    margin-bottom: 50px;
-}
-
-section #questionsAnswers ul li {
-    list-style: none;
-    line-height: 1.5em;
-    margin: 10px 0;
-}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 #answerChoice button {
    width: 100%;

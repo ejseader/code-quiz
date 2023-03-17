@@ -17,7 +17,7 @@
         <h2 class="brand"><a href="#"><i class="fa-solid fa-code"></i> Code Quiz! <i class="fa-regular fa-lightbulb"></i></a></h2>
         <nav>
             <a href="#">View High Scores</a>
-            <span id="timer">Time: 120</span>
+            <div id="timer" class="hide"></div>
         </nav>
     </header>
     <main>
@@ -28,20 +28,15 @@
                 Keep in mind that incorrect answers will penalize your score and time by ten seconds!</p>
                 <button type="button" id="welcomeBtn">Start Quiz</button>
             </section>
-            <section id="questionsAnswers">
-                <h1 id="question"></h1>
-                <ul id="answers">
-                    <!-- <li><button type="button" data-index="0" class="ansBtn"></button></li>
-                    <li><button type="button" data-index="1" class="ansBtn"></button></li>
-                    <li><button type="button" data-index="2"class="ansBtn"></button></li>
-                    <li><button type="button" data-index="3"class="ansBtn"></button></li> -->
-                    </ul>
-                    <hr />
-                    <p class="answerConfirmation"></button>
-            </section>
-            <section id="endScreen">
+            <div id="questionsAnswers" class="hide">
+                <h1 class="ask"></h1>
+                <div class="choices"></div>
+                <hr />
+                <h3 class="answerConfirmation hide"></h3>
+            </div>
+            <section id="endScreen" class="hide">
                 <h1 id="resultMsg">Finished!</h1>
-                <p id="user-score"> </p>
+                <p id="user-score"></p>
                 <form class="form-group">
                     <label for="new-score"><h3 id="enterName">Enter your name: </label>
                     <input type="text" id="userName"></h3>
@@ -55,6 +50,7 @@
 
     </footer>
 
+    <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
