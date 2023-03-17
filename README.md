@@ -18,5 +18,5 @@ are given the option to insert their initials to join the high scores leaderboar
 
 ## Deployed Site
 
-
+[Code Quiz!](https://ejseader.github.io/code-quiz)
 
