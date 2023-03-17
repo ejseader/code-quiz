@@ -189,10 +189,6 @@ section button:hover {
     display: none;
 }
 
-#endScreen {
-    display:none;
-}
-
 #endScreen h3 {
     font-size: 1.2em;
 }

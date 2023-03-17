@@ -58,10 +58,6 @@ function displayQuestion() {
     button.dataset.index = i;
     
     button.addEventListener('click', checkAnswer);
-
-    if (i === questions.length) {
-      endGame();
-    };
     
     choicesWrap.append(button);
   }
@@ -87,6 +83,10 @@ function checkAnswer(eventObj) {
     awardDisplay.setAttribute('style', 'color: red;');
   }
   currentQuestion++
+
+  if (index == questions.length) {
+    endGame();
+  }
 }
 
 function endGame() {
