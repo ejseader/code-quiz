@@ -205,3 +205,36 @@ section button:hover {
     line-height: 1em;
     margin-top: 10px;
 }
+
+#user-score {
+    font-size: 1em;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+#leaderboard-list {
+    width: 100%;
+    display: flex;
+}
+
+.leader-user {
+    flex: 1;
+    background-color: lightblue;
+}
+
+.leader-user p {
+    font-size: 1em;
+    background-color: rgb(93, 157, 179);
+    color: white;
+}
+
+.leader-score {
+    flex: 1
+}
+
+.leader-score {
+    font-size: 1em;
+    font-weight: bold;
+}

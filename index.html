@@ -16,7 +16,7 @@
     <header>
         <h2 class="brand"><a href="#"><i class="fa-solid fa-code"></i> Code Quiz! <i class="fa-regular fa-lightbulb"></i></a></h2>
         <nav>
-            <a href="#">View High Scores</a>
+            <a id="viewHighScores">View High Scores</a>
             <div id="timer" class="hide"></div>
         </nav>
     </header>
@@ -29,19 +29,26 @@
                 <button type="button" id="welcomeBtn">Start Quiz</button>
             </section>
             <div id="questionsAnswers" class="hide">
-                <h1 class="ask"></h1>
+                <h1 id="ask"></h1>
                 <div class="choices"></div>
+                <!-- <button id="endBtn">See Your Score</button> -->
                 <hr />
                 <h3 class="answerConfirmation hide"></h3>
             </div>
             <section id="endScreen" class="hide">
                 <h1 id="resultMsg">Finished!</h1>
-                <p id="user-score"></p>
+                <p>Your score is: <span id="user-score"></span></p>
                 <form class="form-group">
                     <label for="new-score"><h3 id="enterName">Enter your name: </label>
                     <input type="text" id="userName"></h3>
                     <button type="button" id="submitBtn">Join the Leaderboard</button>
                 </form>
+            </section>
+            <section id="leaderboard-list" class="hide">
+                <div class="leader-user"></div>
+                 <div class="leader-score"></div>
+                    </tr>
+                </table>
             </section>
         </section>
     </main>
